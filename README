@@ -1,0 +1,7 @@
+This is a showoff (http://github.com/schacon/showoff) presentation.
+
+sudo gem install showoff
+git clone git://github.com/rick/madison_free_whiskey.git
+cd madison_free_whiskey
+showoff serve
+
