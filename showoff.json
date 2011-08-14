@@ -1,1 +1,8 @@
-{ "name": "free whiskey", "sections": [ {"section":"open"},{"section":"close"} ]}
+{ 
+  "name": "Free Whiskey",
+  "description": "_disk: for embarrassingly fast deployments",
+  "sections": [
+    {"section":"open"},
+    {"section":"close"}
+  ]
+}
