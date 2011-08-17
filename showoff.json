@@ -3,6 +3,7 @@
   "description": "_disk: for embarrassingly fast deployments",
   "sections": [
     {"section":"open"},
+    {"section":"sequence"},
     {"section":"close"}
   ]
 }
