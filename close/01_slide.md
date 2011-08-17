@@ -1,6 +1,4 @@
-!SLIDE code
+!SLIDE center full-page
 
-<center>
 <img src="og_logo.png">
-</center>
 

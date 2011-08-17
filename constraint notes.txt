@@ -1,3 +1,12 @@
+unselfconscious constraints:
+
+ - do the simplest thing that could possibly work
+ - keep overhead low
+ - minimize constraints (nee "features") 
+ - reuse existing solutions, if they will work in our environment
+ - parallelize by making it easier for the community to see value and to contribute fixes
+ - try not to regress (i.e., when a constraint is met, make sure it always stays met)
+
 constraint ordering:
 
  - FAST deployments
@@ -9,23 +18,14 @@ constraint ordering:
  - installable as a gem
  - can work "magically" out of Rails config/ path
  - post_* rake tasks
- - command-line operation
- 
+ - command-line operation 
  - configuration separate from applications
-
  - local deployments
  - efficient checks for continuous deployment (implementation: "staleness checks")
-
- - allow splitting project/target configs into separate files
- - post_* shell scripts
-
  - Roles
  - multiple server support
-
  - configuration files visible over HTTP
-
  - support for detecting changed files
-
 
 upcoming constraints:
 
@@ -36,6 +36,13 @@ upcoming constraints:
  - parallelize SSH runs
  - allow *synchronization* of important parts of a deployment
 
+constraints I have pushed back on so far:
+
+ - bullshit to help unfuck bundler
+ - bullshit to help unfuck rvm
+ - rollback support
+
+---
 
 mis-designs:
 
@@ -43,21 +50,6 @@ mis-designs:
  - "only" support (for isolating single servers on automated deploys)
  - ? non-synchronized deployments -- this turns out to be an interesting example of a design tradeoff that wasn't known before
 
-constraints I have pushed back on so far:
-
- - bullshit to help unfuck bundler
- - bullshit to help unfuck rvm
- - rollback support
-
-
-unselfconscious constraints:
-
- - do the simplest thing that could possibly work
- - keep overhead low
- - minimize constraints (nee "features") 
- - reuse existing solutions, if they will work in our environment
- - parallelize by making it easier for the community to see value and to contribute fixes
- - try not to regress (i.e., when a constraint is met, make sure it always stays met)
 
 
  From "Art & Fear" (c) 1993, Bayles & Orland [http://tinyurl.com/artandfear]:
