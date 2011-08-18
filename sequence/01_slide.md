@@ -1,14 +1,24 @@
 !SLIDE center 
 
-# We start with a simple problem #
+## While travelling in India, I encountered a problem. ##
+
+!SLIDE center
+
+<img src="stache-1.png">
+
+### How do I get one of those fly-ass Tamil Nadu 'staches? ###
 
 !SLIDE center 
 
-<img src="problems-0.png">
+<img src="stache-2.png">
+
+## OK.  And after a fashion intervention... ##
 
 !SLIDE center 
 
-# OK.  And after dinner, maybe we have an actual business-related problem. #
+<img src="stache-2.png">
+
+## OK.  And after a fashion intervention, I encountered an actual business-related problem. ##
 
 !SLIDE commandline incremental
 
@@ -30,15 +40,21 @@
 
 !SLIDE center 
 
-# Which can be expressed as a series of constraints in our design context #
+# From Alexander, this problem is a Design question. #
+
+!SLIDE center 
+
+# Which can be expressed as a series of constraints in a design context. #
 
 !SLIDE center 
 
 <img src="features-1.png">
 
+### Like this. ###
+
 !SLIDE center 
 
-## And if I just try reading some vlad/cap code and doing a little spike on it ... ##
+### And if I just try reading some vlad/cap code and doing a little spike on it, is there really any downside to the experiment? ###
 
 !SLIDE center 
 

@@ -21,10 +21,6 @@
 
 !SLIDE center
 
-<img src="fukuoka.jpg">
-
-!SLIDE center
-
 <img src="bungholio.png">
 
 !SLIDE center
@@ -112,9 +108,19 @@
 
 ### Fortunately, some sets of constraints are more tightly coupled than others. ###
 
-
 !SLIDE center
 
 <img src="alexander-4.png">
 
 ### Meaning that we can use partial forms which fit a group of constraints well, mostly independent of other groups of constraints.
+
+!SLIDE center
+
+### These guys encountered a problem.  ###
+
+[bb]
+
+[ tv gone ]
+
+[ go out across the country trying to score and watch television ]
+
