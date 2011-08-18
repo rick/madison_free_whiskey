@@ -1,34 +1,24 @@
 !SLIDE
 # Free Whiskey!!! #
-## <span style="color: black;">foo</span> ##
-
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<p style="text-align: right;">
-	(rick bradley - <a href="mailto:rick@rickbradley.com">rick@rickbradley.com</a> // OG Consulting)
-</p>
 
 !SLIDE
-# Free Whiskey #
-## _disk!!! (for embarrassingly fast deployments)
+# Free whiskey_disk!!! #
 
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<p style="text-align: right;">
-	(rick bradley - <a href="mailto:rick@rickbradley.com">rick@rickbradley.com</a> // OG Consulting)
-</p>
+!SLIDE
+## <font color="black">!</font> ##
+# Free whiskey_disk!!! #
+## (for embarrassingly fast deployments)
+
+!SLIDE
+## <font color="black">!</font> ##
+# Free whisky_disk!!! #
+## (for embarrassingly fast deployments)
+
+!SLIDE
+
+### rick bradley // @rickbradley // rick@rickbradley.com ###
+
+!SLIDE center
+
+<img src="og_logo.png">
 
