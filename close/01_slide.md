@@ -1,3 +1,44 @@
+!SLIDE center
+
+# IT'S TIME TO GIVE AWAY WHISKEY #
+
+!SLIDE center
+
+## Free Whiskey to the best answer to this question... ##
+
+!SLIDE center
+
+## OK. ##
+
+!SLIDE center
+
+## OK. ##
+##  No.  ##
+## Really. ##
+
+!SLIDE center
+
+## OK. ##
+##  No.  ##
+## Really. ##
+## For Real. ##
+
+!SLIDE center
+
+## Let's try this again. ##
+
+!SLIDE center
+
+## Free Whiskey to the best answer to this question... ##
+
+!SLIDE center
+
+## Many Thanks ##
+
+!SLIDE center
+
+## Mos' respek' ##
+
 !SLIDE
 
 # props #
