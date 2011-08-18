@@ -1,5 +1,5 @@
 !SLIDE
-# Free Whiskey!!! #
+# FREE WHISKEY!!! #
 
 !SLIDE
 # Free whiskey_disk!!! #
