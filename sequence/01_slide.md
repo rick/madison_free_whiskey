@@ -194,9 +194,59 @@
 
 <img src="stack-4.png">
 
-!SLIDE center 
+!SLIDE code smaller
 
-# config example code #
+    @@@ yml
+    staging:
+      domain: "user@www.example.com"
+      deploy_to: "/var/www/suparsite.com/"
+      repository: "git://github.com/clarkkent/suparsite.git"
+      config_repository: "git@github.com:clarkkent/suparconfig.git"
+      deploy_config_to: "/var/cache/git/suparconfig"
+      branch: "production"
+      rake_env:
+        RAILS_ENV: "production"
+    local:
+      repository: "git://github.com/clarkkent/suparsite.git"
+      config_repository: "git@github.com:clarkkent/suparconfig.git"
+      deploy_to: "/Users/clark/git/suparsite"
+      deploy_config_to: "/Users/clark/git/suparconfig"
+      rake_env:
+        RAILS_ENV: "production"
+
+!SLIDE code sm
+
+    @@@ ruby
+    require 'rake'
+    require 'rake/testtask'
+    
+    desc 'Default: run unit tests.'
+    task :default => :test
+    
+    desc 'Test RubyCloud'
+    Rake::TestTask.new(:test) do |t|
+      t.libs << 'lib'
+      t.pattern = 'spec/**/*_spec.rb'
+      t.verbose = true
+    end
+    
+    begin
+      require 'jeweler'
+      Jeweler::Tasks.new do |gemspec|
+        gemspec.name = "whiskey_disk"
+        gemspec.summary = "embarrassingly fast deployments."
+        gemspec.description = "Opinionated gem for doing fast git-based server deployments."
+        gemspec.email = "rick@rickbradley.com"
+        gemspec.homepage = "http://github.com/flogic/whiskey_disk"
+        gemspec.authors = ["Rick Bradley"]
+        gemspec.add_dependency('rake')
+      end
+      Jeweler::GemcutterTasks.new  
+    rescue LoadError
+      puts "Jeweler not available. Install it with: sudo gem install jeweler -s http://gemcutter.org"
+    end
+
+
 
 !SLIDE center 
 
@@ -206,9 +256,87 @@
 
 <img src="stack-5.png">
 
-!SLIDE center 
+!SLIDE code sm
 
-# command-line examples, code, tests #
+    @@@ ruby
+    def run_command
+      eval File.read(File.join(File.dirname(__FILE__), *%w[.. bin wd]))
+    end
+    
+    describe 'wd command' do
+      before do
+        ENV['to'] = ENV['path'] = nil
+      end
+    
+      describe 'when no command-line arguments are specified' do
+        before do
+          Object.send(:remove_const, :ARGV)
+          ARGV = []
+        end  
+    
+        it 'should not run rake tasks' do
+          Rake::Application.should.receive(:new).never
+          lambda { run_command }
+        end
+    
+        it 'should fail' do
+          lambda { run_command }.should.raise
+        end
+      end
+    
+      describe "when the 'setup' command is specified" do
+        before do
+          Object.send(:remove_const, :ARGV)
+          ARGV = ['setup']
+        end  
+    
+        describe 'and no target is specified' do    
+          it 'should not run rake tasks' do
+            Rake::Application.should.receive(:new).never
+            lambda { run_command }
+          end
+    
+    # ... and so on
+
+!SLIDE code sm
+
+    @@@ ruby
+    #!/usr/bin/env ruby 
+
+    require 'optparse'
+    require 'whiskey_disk/rake'
+
+    $0 = "#{$0} setup|deploy"  # jesus, this is a hack.
+
+    options = {}
+    op = OptionParser.new do |opts|
+      opts.on('-t=TARGET', '--to=TARGET', "deployment target") do |target| 
+        options[:target] = target
+      end
+
+      opts.on('-p=TARGET', '--path=TARGET', "configuration path") do |path|
+        options[:path] = path
+      end
+
+      opts.on_tail('-h', '--help', 'show this message') do
+        raise opts.to_s
+      end
+    end
+
+    rest = op.parse(ARGV)
+    raise op.to_s unless options[:target]
+    raise op.to_s unless rest and rest.size == 1
+    command = rest.first
+    raise op.to_s unless ['deploy', 'setup'].include?(command)
+
+    ENV['to'] = options[:target]
+    ENV['path'] = options[:path]
+
+    if command == 'deploy'
+      Rake::Task['deploy:now'].invoke
+    else
+      Rake::Task['deploy:setup'].invoke
+    end
 
 !SLIDE center 
 
@@ -217,6 +345,10 @@
 !SLIDE center 
 
 <img src="stack-6.png">
+
+!SLIDE center
+
+<img src="git-flow-1.png">
 
 !SLIDE center 
 

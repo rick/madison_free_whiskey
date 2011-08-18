@@ -53,3 +53,10 @@ pre.sh_sourceCode .sh_string {
   color: #faa;
 }
 
+pre.sh_sourceCode .sh_preproc {
+  color: orange;
+}
+
+.code pre.sh_yml code {
+  color: yellow;
+}
