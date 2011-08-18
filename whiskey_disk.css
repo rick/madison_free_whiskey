@@ -12,3 +12,14 @@ body, #preso, .slide {
 .commandline code.result {
   color: yellow;
 }
+
+.attribution {
+  margin-top: 2em;
+  text-align: right;
+}
+
+.attribution a {
+  text-decoration: none;
+  font-size: smaller;
+  color: #ccc;
+}
