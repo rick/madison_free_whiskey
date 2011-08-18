@@ -10,9 +10,19 @@
 
 # OK.  And after dinner, maybe we have an actual business-related problem. #
 
-!SLIDE center full-page
+!SLIDE commandline incremental
 
-### (insert bash slide for 8-min / 7-min)###
+    $ time rake vlad:deploy to=staging
+    [ ... churn churn churn ... ]
+    real	8m32.012s
+
+    $ man how_long_until_my_shitty_cdma_connection_fails
+    [ ... churn churn churn ... ]
+    Between 6 and 7 minutes, on this train."
+
+    $ asdfgjkagg90g4#%$@gskd    
+    -bash: asdfgjkagg90g4#%gskd: command not found
+
 
 !SLIDE center full-page
 
