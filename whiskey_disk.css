@@ -57,6 +57,20 @@ pre.sh_sourceCode .sh_preproc {
   color: orange;
 }
 
+pre.sh_sourceCode .sh_oldfile {
+  color: orange;
+}
+
+pre.sh_sourceCode .sh_newfile {
+  color: yellow;
+}
+
+pre.sh_sourceCode .sh_difflines {
+  color: white;
+}
+
+
+
 .code pre.sh_yml code {
   color: yellow;
 }

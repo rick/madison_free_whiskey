@@ -523,9 +523,57 @@
 
 <img src="stack-10.png">
 
-!SLIDE center 
+!SLIDE code smaller
 
-# role support, config examples, wd roles #
+    @@@ yml
+    production:
+      domain:
+      - name: "tommy@app1.foocorp.com"
+      - roles:
+        - "app"
+        - "www"
+      - name: "tommy@jesusbox.foocorp.com"
+        roles: 
+        - "db"
+
+!SLIDE code sm
+
+    @@@ ruby
+    namespace :deploy do
+      task :create_rails_directories do
+        if role? :www
+          puts "creating log/ and tmp/ directories"
+          Dir.chdir(RAILS_ROOT)
+          system("mkdir -p log tmp")
+        end
+      end        
+    
+      task :db_migrate_if_necessary do
+        Rake::Task['db:migrate'] if role? :db
+      end
+    
+      # whytf is this even necessary?  Come on.  This should be built into ts:restart.
+      task :thinking_sphinx_restart => [:environment] do
+        if role? :app
+          Rake::Task['ts:stop'].invoke rescue nil
+          Rake::Task['ts:index'].invoke
+          Rake::Task['ts:start'].invoke
+        end
+      end
+    
+      task :bounce_passenger do
+        if role? :www
+          puts "restarting Passenger web server"
+          Dir.chdir(RAILS_ROOT)
+          system("touch tmp/restart.txt")    
+        end
+      end
+    
+      # etc...
+    
+      task :post_setup  => [ :create_rails_directories ]
+      task :post_deploy => [ :db_migrate_if_necessary, :thinking_sphinx_restart, :bounce_passenger ]
+    end
 
 !SLIDE center 
 
@@ -535,10 +583,19 @@
 
 <img src="stack-11.png">
 
-!SLIDE center 
+!SLIDE code smaller 
 
-# simple open-uri changes, my example github deploy file(s) #
+    @@@ diff
+    --- a/lib/whiskey_disk/config.rb
+    +++ b/lib/whiskey_disk/config.rb
+    @@ -1,4 +1,6 @@
+     require 'yaml'
+    +require 'uri'
+    +require 'open-uri'
 
+		# ... heh. :-)
+     
+    
 !SLIDE center 
 
 <img src="problems-10.png">
