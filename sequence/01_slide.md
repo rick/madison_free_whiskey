@@ -40,7 +40,7 @@
 
 !SLIDE center 
 
-# From Alexander, this problem is a Design question. #
+# Christopher Alexander says this problem is a Design question. #
 
 !SLIDE center 
 
@@ -673,6 +673,15 @@
 
 ### show LoC footprint ###
 
-!SLIDE center
+!SLIDE code small
 
-### show speed ###
+# how fast is this? (twss?)
+
+### [ by completely arbitrary metric of the original slow deployment ]
+
+	before:  8+ minutes
+	after:   15-45 seconds(*)
+
+(*) from India, with the bulk of time allocated to reindexing sphinx indexes
+
+	typically: 8-15 seconds for a normal deployment

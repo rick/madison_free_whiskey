@@ -22,11 +22,10 @@
 
 ### rick bradley // @rickbradley // rick@rickbradley.com
 
-!SLIDE
-
-### rick bradley // @rickbradley // rick@rickbradley.com // 900-867-5309 ###
-
 !SLIDE center
 
 <img src="og_logo.png">
 
+!SLIDE center
+
+<img src="roberts.jpg">
