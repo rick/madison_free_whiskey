@@ -29,3 +29,9 @@
 !SLIDE center
 
 <img src="roberts.jpg">
+
+!SLIDE center
+
+## http://madisonruby.rickbradley.com/ ##
+
+### (74.207.225.224 if DNS is still horked) ###
