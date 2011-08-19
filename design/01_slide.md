@@ -122,9 +122,3 @@
 
 ### These guys encountered a problem.  ###
 
-[bb]
-
-[ tv gone ]
-
-[ go out across the country trying to score and watch television ]
-
