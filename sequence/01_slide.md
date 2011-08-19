@@ -346,21 +346,78 @@
 
 <img src="stack-6.png">
 
+!SLIDE center
+
+# So, wait.  What kind of constraint is this? #
+
+!SLIDE center
+
+<img src="alexander.jpg">
+
 !SLIDE center 
 
-# start big discussion about alexander's unselfconscious techniques #
+## Alexander started in the 1960's trying to understand why modern building architecture is producing buildings which are lifeless, hard to maintain, and ill-suited to their environments. ##
+
+!SLIDE center 
+
+<img src="unself-1.jpg">
+
+<div class="attribution"><a href="http://www.flickr.com/photos/bohemianrabbit/2766928962/">via bohemianrabbit</a></div>
+
+!SLIDE center 
+
+<img src="unself-4.jpg">
+
+<div class="attribution"><a href="http://www.flickr.com/photos/burtoholmes/337429617/">via burtoholmes</a></div>
+
+!SLIDE center
+
+## While "traditional" architecture is often easily maintained, full of life, and a good fit for its context. ##
+
+!SLIDE center
+
+<img src="unself-2.png">
+
+<div class="attribution"><a href="http://stevenlevourch.smugmug.com/Travelling-throughout-the/Cameroon/IMG4591v2-copy/140156425_mJ9Uw-L.jpg">via stevenlevourch</a></div>
+
+!SLIDE center
+
+<img src="unself-3.jpg">
+
+<div class="attribution"><a href="http://www.flickr.com/photos/studiogerk/2382784143/">via studiogerk</a></div>
+
+!SLIDE center 
+
+### He dubs design techniques which have developed naturally and traditionally, as "un-selfconscious" techniques. ###
+
+### These techniques provide good local solutions for the design problems their cultures encounter.  ###
+
+!SLIDE center
+
+### He distinguishes them from design techniques, formulated as rules, disconnected from local and cultural development, as "selfconscious" techniques.
+
+!SLIDE center
+
+### Modern architecture and modern design as a whole are firmly rooted in selfconscious design techniques. ###
+
+!SLIDE center
+
+### Software design is even more firmly rooted in the selfconscious techniques, since there is no local or cultural tradition that we could have ever relied on. ###
+
+!SLIDE center
+
+<img src="patterns-1.jpg">
+<div class="attribution"><a href="http://www.flickr.com/photos/brewbooks/258025427/">via brewbooks</a></div>
+
+### Much of Alexander's later work (pattern languages, the nature of order) addresses approaching unselfconscious techniques in a selfconscious society. ###
+
+!SLIDE center 
+
+# Can we find techniques in software that point us in that direction? #
 
 !SLIDE center 
 
 <img src="unselfconscious.png">
-
-!SLIDE center 
-
-# more big discussion about alexander's unselfconscious techniques #
-
-!SLIDE center 
-
-# some techniques are evolving from the craft, maybe selfconscious #
 
 !SLIDE center 
 
