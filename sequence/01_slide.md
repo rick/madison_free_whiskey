@@ -604,9 +604,36 @@
 
 <img src="stack-12.png">
 
-!SLIDE center 
+!SLIDE code sm
 
-# the simple UI, the complexity of the implementation #
+    @@@ ruby
+    require 'whiskey_disk/helpers'
+    
+    namespace :deploy do
+    
+      task :run_migrations do
+        if role?(:db) and changed?('db/migrate')
+          puts "Running database migrations..."
+          Rake::Task['db:migrate'].invoke
+        end
+      end
+    
+      task :compress_assets do
+        if changed?('public/stylesheets') or changed?('public/javascripts') 
+          puts "Getting my asset munge on..."
+          # do some expensive asset compression stuff
+        end
+      end
+    
+      task :post_deploy => [ :run_migrations, :compress_assets ]
+    end
+
+!SLIDE commandline incremental
+
+    $ git diff ad71bc6..d5163e9 | wc -l
+    
+    1029
+
 
 !SLIDE center 
 
