@@ -668,3 +668,11 @@
 !SLIDE center 
 
 <img src="stack-16.png">
+
+!SLIDE center
+
+### show LoC footprint ###
+
+!SLIDE center
+
+### show speed ###
