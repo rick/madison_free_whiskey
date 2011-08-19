@@ -671,7 +671,11 @@
 
 !SLIDE center
 
-### show LoC footprint ###
+<img src="loc-1.png">
+
+## Lines of code ##
+
+#### Thanks to Apple™ Numbers™ for the easy-to-mangle color selections. ####
 
 !SLIDE code small
 
