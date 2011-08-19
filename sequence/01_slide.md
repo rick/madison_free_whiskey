@@ -441,6 +441,26 @@
 
 #### then talk about how alexander used pattern language and nature of order to try to begin recovering unselfconscious techniques selfconsciously -- a jump-start to getting back to unselfconscious solutions ####
 
+!SLIDE center
+
+### The ceramics teacher announced on opening day that he was dividing the class into two groups.  All those on the left side of the studio, he said, would be graded solely on the *quantity* of work they produce, all those on the right solely on its *quality*. ###
+
+### His procedure was simple:  on the final day of class he would bring in his bathroom scales and weigh the work of the "quantity" group:  fifty pounds of pots rated an "A", forty pounds a "B", and so on. ###
+
+### Those being graded on "quality", however, needed to produce only one pot -- albeit a perfect one -- to get an "A". ###
+
+### Well, came grading time and a curious fact emerged:  the works of highest quality were all produced by the group being graded for quantity. ###
+
+<div class="attribution">
+-- From <a href="http://tinyurl.com/artandfear">"Art & Fear" (c) 1993, Bayles & Orland</a>
+</div>
+
+!SLIDE center
+
+## Iteration is of utmost importance at all levels. ##
+
+### From the lowest code-kata level, to the highest 30,000ft. design level. ###
+
 !SLIDE center 
 
 <img src="stack-7.png">
