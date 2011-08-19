@@ -3,6 +3,9 @@
 # IT'S TIME TO GIVE AWAY WHISKEY #
 
 !SLIDE center
+<img src="bb-5.png">
+
+!SLIDE center
 
 ## Free Whiskey to the best answer to this question... ##
 

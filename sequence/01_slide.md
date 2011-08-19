@@ -128,6 +128,10 @@
       @loaded_configuration ||= load_global_configuration.merge(load_environment_configuration)
     end
 
+!SLIDE center
+
+<img src="bb-1.png">
+
 !SLIDE center 
 
 <img src="problems-2.png">
@@ -193,6 +197,10 @@
 !SLIDE center 
 
 <img src="stack-4.png">
+
+!SLIDE center
+
+<img src="bb-2.png">
 
 !SLIDE code smaller
 
@@ -338,9 +346,14 @@
       Rake::Task['deploy:setup'].invoke
     end
 
+
 !SLIDE center 
 
 <img src="problems-6.png">
+
+!SLIDE center
+
+<img src="bb-3.png">
 
 !SLIDE center 
 
@@ -419,6 +432,10 @@
 
 <img src="unselfconscious.png">
 
+!SLIDE center
+
+<img src="bb-4.png">
+
 !SLIDE center 
 
 <img src="conscious-1.png">
@@ -434,12 +451,6 @@
 !SLIDE center 
 
 <img src="conscious-4.png">
-
-!SLIDE center 
-
-## then low-level (kata) practices ##
-
-#### then talk about how alexander used pattern language and nature of order to try to begin recovering unselfconscious techniques selfconsciously -- a jump-start to getting back to unselfconscious solutions ####
 
 !SLIDE center
 
@@ -1054,6 +1065,9 @@
       end
     end
 
+!SLIDE center
+
+<img src="bb-6.png">
 
 !SLIDE center 
 
