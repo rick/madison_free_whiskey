@@ -346,10 +346,6 @@
 
 <img src="stack-6.png">
 
-!SLIDE center
-
-<img src="git-flow-1.png">
-
 !SLIDE center 
 
 # start big discussion about alexander's unselfconscious techniques #
@@ -392,21 +388,47 @@
 
 <img src="stack-7.png">
 
+!SLIDE center
+
+<img src="git-flow-1.png">
+
 !SLIDE center 
 
-# git-flow sample #
-
-!SLIDE center 
-
-## (show config shazzle slides) ##
+<img src="config-1.png">
 
 !SLIDE center 
 
 <img src="stack-8.png">
 
-!SLIDE center 
+!SLIDE code smaller
 
-# config repo stuff #
+    @@@ yml
+    foo:
+      production:
+        domain: "prod.foocorp.com"
+        deploy_to: "/var/www/foo"
+        repository: "git@github.com:foo/foo.git"
+        branch: "stable"
+        deploy_config_to: "/var/www/foo-config"
+        config_repository: "git@github.com:foo/production-wd-config.git"
+        config_branch: "master"
+        rake_env:
+          RAILS_ENV: 'production'
+      demo:
+        domain: "demo.foocorp.com"
+        deploy_to: "/var/www/foo"
+        repository: "git@github.com:foo/foo.git"
+        branch: "stable"
+        deploy_config_to: "/var/www/foo-config"
+        config_repository: "git@github.com:foo/wd-config.git"
+        config_branch: "master"
+        config_target: "staging"
+        rake_env:
+          RAILS_ENV: 'demo'
+
+!SLIDE center
+
+<img src="config-2.png">
 
 !SLIDE center 
 
@@ -416,9 +438,82 @@
 
 <img src="stack-9.png">
 
-!SLIDE center 
+!SLIDE center
 
-# continuous deployments, local deployments #
+<img src="integration-1.png">
+
+### Run git-daemon locally on two bare git repositories (project + config). ###
+### Track the bare git repos inside the main wd project repo. ###
+### Really run wd, which ssh's to a testing user on a localhost alias. ###
+
+!SLIDE code sm 
+
+    @@@ ruby
+    integration_spec do  
+      describe 'when configured for a local deployment' do
+        before do
+          setup_deployment_area
+        end
+        
+        describe 'when the configuration specifies no domain' do
+          before do
+            @config = scenario_config('local/deploy.yml')
+            @args = "--path=#{@config} --to=project:local-default"
+          end
+    
+          describe 'performing a setup' do
+            it 'should perform a checkout of the repository to the target path' do
+              run_setup(@args)
+              File.exists?(deployed_file('project/README')).should == true
+            end
+                
+            it 'should report the local setup as successful' do
+              run_setup(@args)
+              File.read(integration_log).should =~ /local => succeeded/
+            end
+    
+            it 'should exit with a true status' do
+              run_setup(@args).should == true
+            end
+          end
+    # ... and so on
+
+
+!SLIDE code sm
+
+    @@@ ruby
+    # local target directory, integration spec workspace
+    def deployment_root
+      '/tmp/wd-integration-target/destination/'
+    end
+    
+    # allow defining an integration spec block
+    def integration_spec(&block)
+      yield if ENV['INTEGRATION'] and ENV['INTEGRATION'] != ''
+    end
+    
+    # reset the deployment directory for integration specs
+    def setup_deployment_area
+      FileUtils.rm_rf(deployment_root)
+      File.umask(0)
+      Dir.mkdir(deployment_root, 0777)
+      Dir.mkdir(deployed_file('log'), 0777)
+    end
+    
+    # run a wd setup using the provided arguments string
+    def run_setup(arguments)
+      wd_path  = File.join(File.dirname(__FILE__), '..', 'bin', 'wd')
+      lib_path = File.join(File.dirname(__FILE__), '..', 'lib')
+      system("/usr/bin/env ruby -I #{lib_path} -r whiskey_disk -rubygems #{wd_path} setup \
+        #{arguments} > #{integration_log} 2> #{integration_log}")
+    end
+    
+    def integration_log
+      deployed_file('log/out.txt')
+    end
+    
+    # ... etc.
+
 
 !SLIDE center 
 
@@ -458,7 +553,8 @@
 
 !SLIDE center 
 
-# there are a lot of outstanding problems #
+## With increased users come revelations ##
+## about new problems. ##
 
 !SLIDE center 
 
@@ -466,7 +562,8 @@
 
 !SLIDE center 
 
-# the implementation will introduce more features (constraints) and more overhead #
+## These imply knowledge of more possible constraints in the design context. ##
+## Improving the fit of our form will introduce more overhead. ##
 
 !SLIDE center 
 
@@ -478,7 +575,7 @@
 
 !SLIDE center 
 
-# some problems remain outside the scope of our problem context #
+## We may decide that some constraints carry unacceptable overhead. ##
 
 !SLIDE center 
 
