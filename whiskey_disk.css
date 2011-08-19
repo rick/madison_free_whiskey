@@ -28,6 +28,10 @@ body, #preso, .slide {
   font-size: 140%;
 }
 
+.tiny pre.sh_ruby {
+  font-size: 1%;
+}
+
 pre.sh_sourceCode {
   background-color: black;
   color: #afa;
