@@ -53,7 +53,7 @@
 
 !SLIDE center
 
-## There's no way I can replace his talk.  ##
+## There's no way I can replace Avdi's talk.  ##
 
 !SLIDE center
 
