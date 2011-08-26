@@ -32,6 +32,13 @@
 
 !SLIDE center
 
-## http://madisonruby.rickbradley.com/ ##
+## <a href="http://hoedown2011.rickbradley.com/">http://hoedown2011.rickbradley.com/</a> ##
 
-### (74.207.225.224 if DNS is still horked) ###
+!SLIDE center
+
+## slides on the git hubs: ##
+
+## <a href="http://tinyurl.com/hoedown2011">http://tinyurl.com/hoedown2011</a> ##
+
+#### today's talk is really the 'howdown_free_whiskey' branch ####
+#### of the original MadisonRuby talk ####

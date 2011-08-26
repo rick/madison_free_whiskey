@@ -5,6 +5,10 @@ body, #preso, .slide {
   margin: none;
 }
 
+a {
+  color: #9999ee;  
+}
+
 .commandline code.command {
   color: green;
 }
