@@ -1,3 +1,11 @@
+!SLIDE center
+
+<img src="avdi-1.png">
+
+## Avdi Grimm unfortunately could not make it to the Hoedown :-( ##
+
+### So instead, you will get ... ###
+
 !SLIDE
 # FREE WHISKEY!!! #
 
@@ -45,20 +53,10 @@
 
 !SLIDE center
 
-## I had personally been looking forward to Avdi Grimm's talk "Confident Code" ##
-
-!SLIDE center
-
-<img src="avdi-1.png">
-
-## Unfortunately he could not make it. ##
-
-!SLIDE center
-
 ## There's no way I can replace his talk.  ##
 
 !SLIDE center
 
-## So I will have to resort to cartoons, bribery, and defamation! ##
+## So I will have to resort to cartoons, bribery, and defamation. ##
 
 
