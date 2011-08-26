@@ -7,7 +7,22 @@
 
 !SLIDE center
 
-## Free Whiskey to the best answer to this question... ##
+## A free bottle of whiskey to the best answer to this question... ##
+
+!SLIDE center
+
+<img src="washing-1.png">
+
+# Who has the most whored deployment process? #
+
+!SLIDE center
+
+# Congratulations! #
+
+!SLIDE center
+
+## While we're waiting ... ##
+## There's a party on Saturday night... ##
 
 !SLIDE center
 
@@ -32,7 +47,11 @@
 
 !SLIDE center
 
-## Free Whiskey to the best answer to this question... ##
+## A free bottle of whiskey to the best answer to this question... ##
+
+!SLIDE center
+
+## Who in this room most deserves this good bottle of whiskey? ##
 
 !SLIDE center
 
@@ -47,13 +66,12 @@
 # props #
 
 ### @vinbarnes // @cardioid // @alesandratomasa ###
+### @imajes // @awebneck // @reinh // @ajsharp ###
 ### @atmos // @stolt45 // @benburkert // @dylanegan ###
-### \#teamshawesome // \#epticscrew ###
-### @defunkt // @pjhyett // @mislav // @jimiyo ###
-### @ajsharp // @puppetmasterd // @brainfinger ###
+### @defunkt // @pjhyett // @mislav // @jimiyo // @wilkesj ###
 ### @james_s_white // @stahnma // @wilkesj ###
 
-<marquee><h2>bigtiger</h2></marquee>
+<marquee><h2>@jm</h2></marquee>
 
 !SLIDE center
 

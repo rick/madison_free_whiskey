@@ -42,3 +42,23 @@
 
 #### today's talk is really the 'howdown_free_whiskey' branch ####
 #### of the original MadisonRuby talk ####
+
+!SLIDE center
+
+## I had personally been looking forward to Avdi Grimm's talk "Confident Code" ##
+
+!SLIDE center
+
+<img src="avdi-1.png">
+
+## Unfortunately he could not make it. ##
+
+!SLIDE center
+
+## There's no way I can replace his talk.  ##
+
+!SLIDE center
+
+## So I will have to resort to cartoons, bribery, and defamation! ##
+
+

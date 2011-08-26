@@ -947,10 +947,6 @@
 
 # At this time we would like to take a moment to recommend @coderetreat. #
 
-!SLIDE center
-
-# No.  Seriously.  Big thanks to Corey Haines.  #
-
 !SLIDE code sm
 
     @@@ ruby
