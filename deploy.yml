@@ -1,0 +1,6 @@
+madison:
+  hoedown:
+    repository: 'git@github.com:rick/madison_free_whiskey.git'
+    branch: 'hoedown_free_whiskey'
+    domain: 'eastcore@hoedown2011.rickbradley.com'
+    deploy_to: '/home/eastcore/sites/rickbradley/hoedown2011'
